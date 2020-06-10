@@ -72,3 +72,8 @@ A cotinuación se ofrece una breve explicación de cada una de estas variables y
 | LOS_PER_PAGE_OAI_PMH                 | Cantidad de objetos que va a devolver la aplicación ante una petición mediante el protocolo OAI-PMH. El valor por defecto es `100`.                                                                                                                              |
 | ROAP_ADMIN                           | Correo del administrador de ROAp. El valor por defecto es el correo GAIA.                                                                                                                                                                                        |
 | MUST_CREATE_DEFAULT_LEARNING_OBJECTS | Esta variable permite precargar objetos de aprendizaje al momento de levantar la aplicación. Si el valor es 1 el buscará en la ubicación adecuada los objetos a cargar, si es 0 no lo hará.                                                                      |
+
+Luego de tener cada una de las variables del archivo .env con el valor adecuado, ejecutamos el siguiente comando en la raíz del proyecto:
+
+`docker-compose up --build`
+...
