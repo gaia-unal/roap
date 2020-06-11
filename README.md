@@ -73,7 +73,14 @@ A cotinuación se ofrece una breve explicación de cada una de estas variables y
 | ROAP_ADMIN                           | Correo del administrador de ROAp. El valor por defecto es el correo GAIA.                                                                                                                                                                                        |
 | MUST_CREATE_DEFAULT_LEARNING_OBJECTS | Esta variable permite precargar objetos de aprendizaje al momento de levantar la aplicación. Si el valor es 1 el buscará en la ubicación adecuada los objetos a cargar, si es 0 no lo hará.                                                                      |
 
+### Precarga de objetos de aprendizaje (Opcional)
+Dejar cada uno de los OA a precargar en la siguiente ruta `roap/learning_object/default_files/files/`
+
+Dejar cada uno de los archivos XML con los metadatos de cada objeto en `roap/learning_object/collection/setup/default_learning_objects_xml/`
+
+### Construcción
 Luego de tener cada una de las variables del archivo .env con el valor adecuado, ejecutamos el siguiente comando en la raíz del proyecto:
 
 `docker-compose up --build`
-...
+
+Este comando se encargará de construir cada uno de los servicios que componen a ROAp. Una vez termine su ejecución deberíamos poder acceder a la aplicación en http://localhost:8081/
