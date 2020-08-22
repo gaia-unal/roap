@@ -55,6 +55,9 @@ supported_mimetypes = [
   "image/vnd.microsoft.icon",
   "application/zip",
   "application/pdf",
+  "application/octet-stream",
+  "application/x-zip-compressed",
+  "multipart/x-zip"
 ]
 
 
